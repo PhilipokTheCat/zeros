@@ -1,3 +1,8 @@
 module.exports = function getZerosCount(number) {
-  // your implementation
+  let count = 0, index = 5;
+  while (number > index){
+    count += parseInt(number/index);
+    index *= 5;
+  }
+  return count;
 }
